@@ -6,39 +6,9 @@
     <title>Peso corporal en otros planetas</title>
 </head>
 <body>
-    <h1>Tu peso corporal es diferente en otro planeta</h1>
-    <p>Tu peso corporal es diferente en otro planeta debido a los cambios en la gravedad</p>
-    <script>
-        var usuario = prompt("Ingrese su Nombre");
-        var planeta = parseInt(prompt("Elige el planeta. 1 es Marte, 2 es Jupiter"));
-        var pl;
-        const g_tierra = 9.8;
-        const g_marte = 3.7;
-        const g_jupiter = 24.8;
-        var peso = parseFloat(prompt("Ingrese su Peso"));
-        var peso_final;
-
-        if (planeta==1){
-            peso_final = (peso * g_marte)/g_tierra;
-            peso_final = peso_final.toFixed(2);
-            pl = "Marte";
-            document.write("Hola " + usuario + ", Tu peso en " + pl + " es <strong>" + peso_final + " kilos</strong>");
-        }
-        else if (planeta==2) {
-            peso_final = (peso * g_jupiter)/g_tierra;
-            peso_final = peso_final.toFixed(2);
-            pl = "Jupiter";
-            document.write("Hola " + usuario + ", Tu peso en " + pl + " es <strong>" + peso_final + " kilos</strong>");
-        }
-
-        else{
-            document.write("Datos Incorrectos, Seleccione el planeta adecuado. 1 es Marte, 2 es Jupiter ");
-        }
-
-        // peso_final = (peso * g_marte)/g_tierra;
-        // peso_final = peso_final.toFixed(2);
-        // document.write("Hola " + usuario + ", Tu peso en " + pl + " es <strong>" + peso_final + " kilos</strong>");
-        
-    </script>
+    <center><h1>PESO CORPORAL EN EL ESPACIO</h1></center>
+    <center><p>Tu peso corporal es diferente en otro planeta debido a los cambios en la gravedad</p></center>
+    <center><canvas width="300" height="300" justify-content=space-between id="dibujito"></canvas></center>
+    <script src="./codigo.js"></script>
 </body>
 </html>
